@@ -185,6 +185,15 @@ copy "$(WindowsSdkDir)bin\$(TargetPlatformVersion)\x64\dxil.dll" "$(TargetDir)dx
   <ItemGroup>
     <Text Include="externals\imgui\LICENSE.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="Object3d.hlsli" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\課題保存  ２年後期\CG3\ゆうだいコピー\externals\DirectXTex\DirectXTex_Desktop_2022_Win10.vcxproj">
+      <Project>{371b9fa9-4c90-4ac6-a123-aced756d6c77}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
